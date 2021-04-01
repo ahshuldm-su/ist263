@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            .address {float: left; margin-right: 60px;}
+            .clear {clear: both;}
+            .address_email {background-color: #ffffff; border-radius: 1em; padding-bottom: 20px; padding-left: 20px;}
+
+            .gmap_form {display: flex;}
+            .gmap_form {background-color: #ffffff; border-radius: 1em;}
+            .gmap, .form {margin: 10px;}
+            .gmap {flex: 1; padding-left: 100px;}
+            .form {flex: 1;}
+        </style>
+
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="skills.html">Skills</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
+    <div class="address_email">
+    <div class="address">
+       <h1>Contact</h1>
+       Avery Shuldman <br>
+       417 Comstock Ave <br>
+       Syracuse, NY 13210 <br>
+    </div>
+    <div class="email">
+        <br>
+       <a href="mailto:ahshuldm@syr.edu">Avery's Email</a>
+        <br>
+       
+        <a href="https://www.linkedin.com/in/averyshuldman/" target="_blank"> <img src= "../lab03/project_image/logo-sized.png" alt=”Linkedin” class="img"><br>My Linkedin Profile</a>
+    </div>
+    </div>
+    <div class="clear"></div>
+        <br>
+    <div class="gmap_form">
+    <div class="gmap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.953146326331!2d-76.13221638432786!3d43.04241729972754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f30af7181d95%3A0x58d5a4c398db10ad!2s417%20Comstock%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1614271798487!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+        
+    <div class="form">
+    <form action="mailto:ahshuldm@syr.edu" method="post">
+        <br> <br> Send me a message!
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name"> <br> <br>
+
+        <label for="inquiry">Inquiry: </label>
+        <textarea id="inquiry" name="inquiry" rows="4" cols="50">Put message here: </textarea> <br>
+
+        <br> Are You A: <br>
+        <label for="profession_em">Employer</label>
+        <input type="radio" name="profession" id="profession_em" value="employer">
+        <label for="profession_pro">Professor</label>
+        <input type="radio" name="profession" id="profession_pro" value="professor">
+        <label for="profession_stu">Student</label>
+        <input type="radio" name="profession" id="profession_stu" value="student">
+        <label for="profession_oth">Other</label>
+        <input type="radio" name="profession" id="profession_oth" value="other">
+
+       <br>
+        <br> <input type="submit" value="send form">
+
+    </form>
+    </div>
+    </div>
+
+    </body>
+</html>
