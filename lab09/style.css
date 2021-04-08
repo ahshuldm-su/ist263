@@ -1,0 +1,29 @@
+Body {background-color: #f4f9f9;
+    font-style: #000000;}
+
+h1 {color: #aaaaaa;}
+
+p {background-color: #ccf2f4;
+    padding: 20px;
+}
+
+nav a:hover {background-color:#c0d1ed;}
+nav a:visited {color:#4287f5;}
+nav a:link {color:#aaaaaa;}
+
+nav {background-color: #a4ebf3;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    nav a {display: block; padding: 5px;}
+    span {display: none;}
+}
+
+@media only screen and (max-width: 768px) 
+{
+    nav a {display: block; padding: 5px;}
+    span {display: none;}
+}
