@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Unit 11 JavaScript</title>
+        <script>
+            function Leaving() {
+                // alert('You left this form element');
+                document.getElementById("message").innerHTML = "you left this form element";
+            }
+        </script>
+    </head>
+    <body>
+        <form action="mailto:ahshuldm@syr.edu" method="post"></form>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" onblur="Leaving();"> <br>
+            <label for="year">Year: </label>
+            <input type="text" id="year" name="year"> <br>
+            <input type="submit">
+        </form>
+        <div id="message"></div> <!-- this is where I'm gonna bring up the message -->
+    </body>
+</html>
+
