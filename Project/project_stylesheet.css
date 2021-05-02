@@ -1,0 +1,16 @@
+nav a:hover {background-color:#c0d1ed;}
+nav a:visited {color:#4287f5;}
+nav a:link {color:#000080;}
+
+h1, h2 {background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+body {background-color: #f2f5f8; font-family: Arial, Helvetica, sans-serif;
+    }
+
+.banner {width: 100%; max-width: 100%;}
+
+.img1 .img2, .img3 {width: 100%; max-width: 100%}
