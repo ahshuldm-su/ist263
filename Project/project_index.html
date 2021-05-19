@@ -21,12 +21,14 @@
 
         .img3 {width: 300px;}
 
-        .img1, .img2, .img3 {max-width: 100%; max-height: 100%;}
+        /*.img1, .img2, .img3 {max-width: 100%; max-height: 100%;}*/
 
-        @media only screen and (max-width: 920px) {
-            .p, .p1, .p2, .p3 {margin: 0px; text-align: center;}
-            .container1, .container2, .container3 {margin: 0px;}
-            /*.img1 .img2, .img3 {width: 100%; max-width: 100%; align-content: center;}*/
+        .row1, .row2 {display: flex; flex: 1; flex-wrap: wrap;}
+        .col1, .col2 {display: flex; flex: 1; justify-content: center; flex-wrap: wrap;}
+
+        @media only screen and (max-width: 1300px) {
+            .p, .p1, .p2, .p3 {margin: 0px;}
+            .container1, .container2, .container3 {margin: 0px; flex-wrap: wrap; justify-content: center;}
             }
 
         @media only screen and (max-width: 600px) {
@@ -43,13 +45,34 @@
                 position: absolute;
                 left: 10px;
             }
+
+        #hamicon {display: none;}
+        @media only screen and (max-width: 600px) {
+            #hamicon {display: block;}
+            #navlinks {display: none;}
+            span {display: none;}
+            nav a {display: block; padding: 10px 0px;}
+        }
     </style>
+    <script>
+        function changenav() {
+                if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
+                document.getElementById("navlinks").style.display = "none";
+                }
+                else {
+                    document.getElementById("navlinks").style.display = "block";
+                }
+            }
+    </script>
     </head>
     <body>
         <nav>
-            <a href="project_index.html">Home</a> |
-            <a href="project_page1.html">Best Food</a> |
+            <img src="https://laferger.github.io/ist263/images/hamburger.png" alt="hamburger icon" width="35" id="hamicon" onclick="changenav();">
+            <div id="navlinks">
+            <a href="project_index.html">Home</a> <span>|</span> 
+            <a href="project_page1.html">Best Food</a> <span>|</span> 
             <a href="project_page2.html">Best Ambience</a>
+            </div> 
         </nav>
 
         <a href="#maincontent" id="skip">Skip to Content</a>
@@ -92,6 +115,29 @@
                 </p>
             </div>
             <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="squares">
+                <div class="row1">
+                    <div class="col1">
+                        <a href="project_page1.html"><img src="project_media/island_grill_square.png" alt="best food" width="200"></a>
+                    </div>
+                    <div class="col2">
+                        <a href="project_page2.html"><img src="project_media/sol_square.png" alt="best ambience" width="200"></a>
+                    </div>
+                </div> 
+                <div class="row2">
+                    <div class="col1">
+                        <p>Best Food</p>
+                    </div>
+                    <div class="col2">
+                        <p>Best Ambience</p>
+                    </div>
+                </div>
+            </div>
+
         </main>
 
         <hr>

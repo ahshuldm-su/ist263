@@ -10,6 +10,13 @@ h1, h2 {background-color: #ffffff;
     font-weight: bolder;
 }
 
+nav {background-color: #ffffff;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    font-size: large;
+}
+
 body {background-color: #f2f5f8; font-family: 'Poppins', sans-serif;
     }
 
